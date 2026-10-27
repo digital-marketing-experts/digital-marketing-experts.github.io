@@ -333,7 +333,118 @@ header {
   border: 1px solid var(--accent-cyan);
 }
 
-/* Topic Categories Grid */
+/* Author Publication Badge */
+.author-publication-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 9999px;
+  padding: 6px 16px 6px 6px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+.author-publication-badge img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--accent-cyan);
+}
+
+.author-publication-badge span {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  letter-spacing: 0.3px;
+}
+
+/* Adrian Mercer's Expertise Cards Grid */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-bottom: 64px;
+}
+
+.expertise-card {
+  background: linear-gradient(180deg, rgba(21, 29, 48, 0.95) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--accent-cyan);
+  border-radius: 12px;
+  padding: 26px 22px;
+  transition: all 0.25s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.expertise-card:nth-child(2) {
+  border-top-color: var(--accent-emerald);
+}
+
+.expertise-card:nth-child(3) {
+  border-top-color: var(--accent-purple);
+}
+
+.expertise-card:nth-child(4) {
+  border-top-color: var(--accent-orange);
+}
+
+.expertise-card:hover {
+  border-color: var(--border-highlight);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.expertise-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.expertise-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.expertise-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.expertise-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+/* Topic Categories Grid (Legacy Support) */
 .topics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));

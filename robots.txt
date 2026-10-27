@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mdbabu09563-pixel.github.io/digital-marketing-architecture/sitemap.xml
+Sitemap: https://digital-marketing-experts.github.io/sitemap.xml
